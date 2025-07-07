@@ -1,0 +1,72 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shape Manager</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Shape Details Calculator</h1>
+    <div class="form-group">
+      <label for="shape">Choose Shape:</label>
+      <select id="shape">
+        <option value="triangle">Triangle</option>
+        <option value="pentagon">Pentagon</option>
+        <option value="hexagon">Hexagon</option>
+      </select>
+    </div>
+    
+    <div id="base-group" class="form-group">
+      <label for="base">Base:</label>
+      <input type="number" id="base" placeholder="Enter base">
+    </div>
+
+    <div id="height-group" class="form-group">
+      <label for="height">Height:</label>
+      <input type="number" id="height" placeholder="Enter height">
+    </div>
+
+    <div id="side-group" class="form-group">
+      <label for="side">Side:</label>
+      <input type="number" id="side" placeholder="Enter side length">
+    </div>
+
+    <div class="form-group">
+      <label for="color">Color:</label>
+      <input type="text" id="color" placeholder="Enter color">
+    </div>
+
+    <div class="form-group">
+      <label for="unit">Unit:</label>
+      <select id="unit">
+        <option value="cm">cm</option>
+        <option value="inches">inches</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="outlineThickness">Outline Thickness:</label>
+      <input type="number" id="outlineThickness" placeholder="Enter thickness">
+    </div>
+
+    <div class="form-group">
+      <label for="outlineColor">Outline Color:</label>
+      <input type="text" id="outlineColor" placeholder="Enter outline color">
+    </div>
+
+    <div class="form-group">
+      <label for="outlineStyle">Outline Style:</label>
+      <input type="text" id="outlineStyle" placeholder="solid / dotted">
+    </div>
+
+    <button onclick="printDetails()">Print Details</button>
+
+    <div class="output" id="output"></div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
+
